@@ -15,10 +15,10 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # Color palette
 COLOR_TIME="38;5;44"
-COLOR_BRACKET="38;5;39"
-COLOR_USER="38;5;141"
-COLOR_DIR="38;5;108"
-COLOR_BRANCH="38;5;141"
+#COLOR_BRACKET="38;5;39"
+#COLOR_USER="38;5;141"
+#COLOR_DIR="38;5;108"
+#COLOR_BRANCH="38;5;141"
 COLOR_GIT_CLEAN="38;5;245"
 COLOR_GIT_DIRTY="38;5;173"
 
@@ -47,9 +47,9 @@ git_status() {
     awk '{a+=$1; d+=$2} END {print a+0, d+0}')
 
   if ((staged_add + staged_del + unstaged_add + unstaged_del == 0)); then
-    printf '\e[${COLOR_GIT_CLEAN}m✓ clean'
+    printf "\e[${COLOR_GIT_CLEAN}m✓ clean"
   else
-    printf '\e[${COLOR_GIT_DIRTY}m+%d -%d ↑%d ↓%d' \
+    printf "\e[${COLOR_GIT_DIRTY}m+%d -%d ↑%d ↓%d" \
       "$staged_add" "$staged_del" "$unstaged_add" "$unstaged_del"
   fi
 }
