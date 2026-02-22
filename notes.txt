@@ -1,0 +1,4 @@
+A good rice is calming. Different palettes evoke different memories and emotions in people. A calming palette would have soft, warm and muted tones and avoid sharp contrasts.
+
+I've generally preferred dark themes to light ones. I'm trying to build a light color scheme that I actually like. The challenge is finding a non stimulating light background color alongside a contrasting foreground. Large text can get away with low contrast, but not small text on the terminal.
+
